@@ -3,7 +3,7 @@
 const { test } = require('tap')
 const Fastify = require('..')
 const fp = require('fastify-plugin')
-const deepClone = require('rfdc')({ circles: true, proto: false })
+const { klona: deepClone } = require('klona')
 const Ajv = require('ajv')
 const { kSchemaController } = require('../lib/symbols.js')
 const { FSTWRN001 } = require('../lib/warnings')
